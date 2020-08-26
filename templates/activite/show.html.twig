@@ -1,0 +1,23 @@
+{% extends 'user_connected_base.html.twig' %}
+
+{% block title %}Hello ActiviteController!{% endblock %}
+
+{% block body %}
+    <div class="card mb-3">
+        {% if image %}
+            <img src="{{ asset('uploads/images/' ~ image) }}" class="card-img-top" alt="{{ activite.nom }}">
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title display-4">{{ activite.nom }}</h5>
+            <div class="actionButtons">
+                <div class="leftButtons">
+                    <a href="{{ path('activite') }}" class="btn btn-secondary">Retour</a>
+                    <a href="{{ path('update_activite', {'activite' : activite.id}) }}" class="btn btn-secondary">Modifier</a>
+                    <a href="{{ path('delete_activite', {'activite' : activite.id}) }}" class="btn btn-secondary">Supprimer</a>
+                </div>
+                <div class="rightButtons">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

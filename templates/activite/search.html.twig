@@ -1,0 +1,40 @@
+{% extends 'user_connected_base.html.twig' %}
+
+{% block title %}Hello ActiviteController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h2>Résultat pour la recherche : {{ search }}</h2>
+        <a href="{{ path('activite') }}" class="btn btn-secondary">Retour</a>
+        {% if activites|length > 0 %}
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>@Id</th>
+                    <th>Nom</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                {% for activite in activites %}
+                    <tr>
+                        <td>{{ activite.id }}</td>
+                        <td>{{ activite.nom }}</td>
+                        <td>
+                            <a href="{{ path('show_activite', {'activite' : activite.id}) }}" class="btn btn-secondary">Voir</a>
+                            <a href="{{ path('update_activite', {'activite' : activite.id}) }}"
+                               class="btn btn-secondary">Modifier</a>
+                            <a href="{{ path('delete_activite', {'activite' : activite.id}) }}"
+                               class="btn btn-secondary">Supprimer</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <h4 >Aucun résultat</h4>
+        {% endif %}
+
+    </div>
+{% endblock %}

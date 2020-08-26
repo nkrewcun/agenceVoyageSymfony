@@ -1,0 +1,43 @@
+{% extends 'user_connected_base.html.twig' %}
+
+{% block title %}Ajouter une destination{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h2>Ajouter une destination</h2>
+        {{ form_start(form) }}
+
+        <div class="form-group">
+            {{ form_label(form.lieu) }}
+            {{ form_widget(form.lieu) }}
+            {{ form_errors(form.lieu) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.type) }}
+            {{ form_widget(form.type) }}
+            {{ form_errors(form.type) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.pays) }}
+            {{ form_widget(form.pays) }}
+            {{ form_errors(form.pays) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.dateOuverture) }}
+            {{ form_widget(form.dateOuverture) }}
+            {{ form_errors(form.dateOuverture) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.nbStar) }}
+            {{ form_widget(form.nbStar) }}
+            {{ form_errors(form.nbStar) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.sejour) }}
+            {{ form_widget(form.sejour) }}
+            {{ form_errors(form.sejour) }}
+        </div>
+        {{ form_widget(form.submit) }}
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

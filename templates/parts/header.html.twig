@@ -1,0 +1,33 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{{ path('default') }}">
+            <img src="{{ asset('images/logoPlane.svg') }}" width="30" height="30" alt="logoPlane">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="{{ path('default') }}" class="nav-link" role="button">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('sejour_default') }}" class="nav-link" role="button">Les séjours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('destination_default') }}" class="nav-link" role="button">Les destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('activite_default') }}" class="nav-link" role="button">Les activités</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('categorie_default') }}" class="nav-link" role="button">Les catégories</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="{{ path('app_logout') }}" class="nav-link">Déconnexion</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,58 @@
+/*
+ * Globals
+ */
+
+/* Links */
+nav a,
+nav a:focus,
+nav a:hover {
+    color: #fff;
+}
+
+/* Custom default button */
+nav .btn-secondary,
+nav .btn-secondary:hover,
+nav .btn-secondary:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: #fff;
+}
+
+.cover-container {
+    max-width: 42em;
+    align-items: center;
+}
+
+
+/*
+ * Header
+ */
+.navbar {
+    color: white!important;
+    background-color: #4E0D3A!important;
+    width: 100%;
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+    padding: 0 1.5rem;
+}
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}

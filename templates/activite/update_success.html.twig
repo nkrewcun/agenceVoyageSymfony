@@ -1,0 +1,10 @@
+{% extends 'user_connected_base.html.twig' %}
+
+{% block title %}Hello ActiviteController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Bravo, votre activité {{ activite.id }} a bien été modifiée ! ✅</h1>
+        <a href="{{ path('activite') }}" class="btn btn-secondary mb-2">Retour</a>
+    </div>
+{% endblock %}

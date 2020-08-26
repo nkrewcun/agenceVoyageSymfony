@@ -1,0 +1,43 @@
+{% extends 'user_connected_base.html.twig' %}
+
+{% block title %}Ajouter un séjour{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h2>Ajouter un séjour</h2>
+        {{ form_start(form) }}
+
+        <div class="form-group">
+            {{ form_label(form.titre) }}
+            {{ form_widget(form.titre) }}
+            {{ form_errors(form.titre) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.typeLogement) }}
+            {{ form_widget(form.typeLogement) }}
+            {{ form_errors(form.typeLogement) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.nbPersonne) }}
+            {{ form_widget(form.nbPersonne) }}
+            {{ form_errors(form.nbPersonne) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.description) }}
+            {{ form_widget(form.description) }}
+            {{ form_errors(form.description) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.category) }}
+            {{ form_widget(form.category) }}
+            {{ form_errors(form.category) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.activites) }}
+            {{ form_widget(form.activites) }}
+            {{ form_errors(form.activites) }}
+        </div>
+        {{ form_widget(form.submit) }}
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
