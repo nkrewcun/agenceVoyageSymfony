@@ -11,11 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de040649-993b-4d44-9386-3f289d295460" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/agenceVoyage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/agenceVoyage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3f0a9b07-05f5-4b2f-8798-f84ac3b95e02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3f0a9b07-05f5-4b2f-8798-f84ac3b95e02.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +145,9 @@
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
       <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
     </include_path>
   </component>
   <component name="ProjectId" id="1g2xUCDEgyMeJNYGyYyogeQvyUi" />
@@ -195,7 +202,8 @@
       <workItem from="1597907025906" duration="19439000" />
       <workItem from="1598252775153" duration="16579000" />
       <workItem from="1598339164659" duration="20230000" />
-      <workItem from="1598425720507" duration="12313000" />
+      <workItem from="1598425720507" duration="14688000" />
+      <workItem from="1598512172788" duration="7432000" />
     </task>
     <servers />
   </component>
@@ -222,18 +230,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597916465094" />
-    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser" timestamp="1598274751337">
+    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser" timestamp="1598519831139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598274751337" />
+    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598519831139" />
     <state x="977" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597827627458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="977" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597827627458" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598442533030">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598519962474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598442533030" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598519962474" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1598428243503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -254,9 +262,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598428414665" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1597918975763">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1598517679197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597918975763" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598517679197" />
   </component>
 </project>

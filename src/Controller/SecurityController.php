@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\RedefinePasswordType;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -33,7 +34,7 @@ class SecurityController extends AbstractController
     /**
      * @Route("/password/redefine", name="redefine_password")
      */
-    public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder): Response
+    public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, EntityManagerInterface $entityManager): Response
     {
         $user = $this->getUser();
         $form = $this->createForm(RedefinePasswordType::class, $user);
@@ -48,8 +49,6 @@ class SecurityController extends AbstractController
                 )
             );
             $user->setIsPasswordRedefined(true);
-
-            $entityManager = $this->getDoctrine()->getManager();
             $entityManager->flush();
             // do anything else you need here, like send an email
 
